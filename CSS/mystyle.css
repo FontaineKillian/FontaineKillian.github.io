@@ -85,14 +85,14 @@ body {
 }
 
 #project{
-  filter: contrast(75%);
+  filter: contrast(100%);
   max-width: 830px;
   margin-left: -65px;
   margin-top: -65px;
 }
 
 #project:hover{
-  filter: contrast(100%);
+  filter: contrast(75%);
 }
 
 .photo{
@@ -109,13 +109,42 @@ body {
   width: 810px;
   margin-left: -65px;
   position: absolute; 
-  bottom: 3px; 
+  bottom: 3.5px; 
   color: white;
   background-color: rgba(40, 40, 40, 0.75);
   padding: 10px;
-  transition: opacity 0.3s 
+  transition: opacity 0.3s;
+  font-size: 20px; 
 } 
 
 .image-container:hover .banner{
   opacity: 0;
+}
+
+.image-container:hover .hide{
+  display: block;
+}
+
+.hide{
+  top: -65px;
+  width: 810px;
+  margin-left: -65px;
+  position: absolute;
+  bottom: 3.5px; 
+  background-color: rgba(20, 20, 20, 0.85);;
+  display: none;
+  transition: opacity 0.3s;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.hide-text{
+  text-align: start;
+  margin: 20px;
+}
+
+.icon{
+  max-width: 17px;
+  max-height: 17px;
 }

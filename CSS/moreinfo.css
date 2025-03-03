@@ -4,11 +4,46 @@ body {
     display: grid;
   }
 
-  .image-project {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.image-project {
+  margin-top: -65px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 65px;
+}
 
-  h1{
-    color: #fceccf;
-  }
+h1{
+  color: #fceccf;
+}
+
+p{
+  color: #fceccf;
+}
+
+.informations-project{
+  margin-top: -35px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+#about-section{
+  margin-bottom: 65px;
+  height: 350px;
+  width: 400px;
+  background-color: rgb(92, 92, 92);
+  padding: 65px;
+}
+  
+#info-section{
+  height: 350px;
+  width: 400px;
+  background-color: rgb(92, 92, 92);
+  padding: 65px;
+}
+
+.icon{
+  max-width: 21px;
+  max-height: 21px;
+}

@@ -15,6 +15,10 @@ h1{
   color: #fceccf;
 }
 
+h4{
+  color: #fceccf;
+}
+
 p{
   color: #fceccf;
 }
@@ -30,14 +34,14 @@ p{
 
 #about-section{
   margin-bottom: 65px;
-  height: 350px;
+  height: 280px;
   width: 400px;
   background-color: rgb(92, 92, 92);
   padding: 65px;
 }
   
 #info-section{
-  height: 350px;
+  height: 280px;
   width: 400px;
   background-color: rgb(92, 92, 92);
   padding: 65px;
@@ -46,4 +50,55 @@ p{
 .icon{
   max-width: 21px;
   max-height: 21px;
+  float: left;
+}
+
+.body-section{
+  margin-top: -45px;
+  margin-left: 440px;
+  margin-right: 440px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(92, 92, 92);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover{
+  background-color: rgb(150, 150, 150);
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

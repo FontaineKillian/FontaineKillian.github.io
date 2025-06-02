@@ -99,6 +99,7 @@ p{
   position: absolute;
   opacity: 0;
   top: 0;
+  left: -20px; /* <- Important pour éviter la fusion */
   transition: 0.5s;
 }
 
@@ -106,7 +107,7 @@ p{
   padding-left: 25px;
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(150, 150, 150);
 }
 
@@ -115,7 +116,7 @@ p{
   left: 0;
 }
 
-.button-back{
+.button-back {
   top: 10px;
   position: sticky;
 }

@@ -19,6 +19,14 @@ h4{
   color: #fceccf;
 }
 
+.title-project{
+  width: 30%;
+  position: absolute;
+  margin-left: 660px;
+  margin-top: 50px;
+  margin-right: auto;
+}
+
 p{
   color: #fceccf;
 }

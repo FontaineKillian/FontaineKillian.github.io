@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif; 
-    background-color: #222222;
+    background-color: #0D0D0D;
     display: grid;
   }
 
@@ -13,15 +13,15 @@ body {
 
 h1{
   margin-top: -25px;
-  color: #fceccf;
+  color: #8ebf8a;
 }
 
 h2{
-  color: #fceccf;
+  color: #8ebf8a;
 }
 
 h4{
-  color: #fceccf;
+  color: #8ebf8a;
 }
 
 .title-project{
@@ -33,7 +33,7 @@ h4{
 }
 
 p{
-  color: #fceccf;
+  color: #c096d9;
 }
 
 .informations-project{
@@ -49,14 +49,14 @@ p{
   margin-bottom: 65px;
   height: 280px;
   width: 400px;
-  background-color: rgb(92, 92, 92);
+  background-color: #1f1f1f;
   padding: 65px;
 }
   
 #info-section{
   height: 280px;
   width: 400px;
-  background-color: rgb(92, 92, 92);
+  background-color: #1f1f1f;
   padding: 65px;
 }
 
@@ -75,7 +75,7 @@ p{
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: rgb(92, 92, 92);
+  background-color: #1f1f1f;
   border: none;
   color: #FFFFFF;
   text-align: center;

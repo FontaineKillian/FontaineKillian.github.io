@@ -221,6 +221,7 @@ ul, ol {
 
 .button:hover {
   border-color: yellow;
+  background-color: #313131;
 }
 
 .button:hover span:before {

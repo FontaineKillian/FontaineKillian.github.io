@@ -67,6 +67,7 @@ h4,h5 {
 }
 .réseaux {
   width: 50px;
+  border-radius: 10px;
 }
 .réseaux:hover {
   margin-top: -2.5px;
@@ -185,9 +186,9 @@ ul, ol {
 
 .button {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 10px;
+  border-color: transparent;
   background-color: #141414;
-  border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 14px;
@@ -219,17 +220,12 @@ ul, ol {
 }
 
 .button:hover {
-  background-color: rgb(150, 150, 150);
+  border-color: yellow;
 }
 
 .button:hover span:before {
   opacity: 1;
   left: 0;
-}
-
-.button-back {
-  top: 10px;
-  position: sticky;
 }
 
 @media screen and (max-width: 768px) {

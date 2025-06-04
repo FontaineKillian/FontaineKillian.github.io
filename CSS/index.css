@@ -1,4 +1,3 @@
-/* --- Reset / Base --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,7 +39,6 @@ h4,h5 {
   text-align: center;
 }
 
-/* --- Layout principal --- */
 .layout {
   display: flex;
   flex-direction: row;
@@ -49,7 +47,6 @@ h4,h5 {
   padding: 20px;
 }
 
-/* --- Barre latérale --- */
 .vertical-menu {
   position: fixed;
   top: 0;
@@ -57,7 +54,7 @@ h4,h5 {
   width: 250px;
   height: 100vh;
   background-color: #1f1f1f;
-  padding: 60px 10px 10px 10px; /* ↑ Décale le contenu vers le bas */
+  padding: 60px 10px 10px 10px;
   border-radius: 0 10px 10px 0;
   overflow-y: auto;
   text-align: center;
@@ -78,16 +75,14 @@ h4,h5 {
   background-color: yellow;
 }
 
-/* --- Zone projets --- */
 .projects {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  margin-left: 270px; /* <-- ici aussi ça fonctionne */
+  margin-left: 270px;
 }
 
-/* --- Bloc projet --- */
 #slot1, #slot2 {
   background-color: #1f1f1f;
   padding: 20px;
@@ -119,7 +114,7 @@ h4,h5 {
 
 .project-container {
   position: relative;
-  display: inline-block; /* Garde les dimensions autour de l'image */
+  display: inline-block;
 }
 
 .project-image {
@@ -138,9 +133,9 @@ h4,h5 {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  white-space: nowrap;      /*Empêche le retour à la ligne */
-  overflow: hidden;         /*Empêche le débordement visible */
-  text-overflow: ellipsis;  /* ... si le texte dépasse */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-sizing: border-box;
   width: 105%;
   left: -5%;
@@ -184,8 +179,8 @@ a:active {
 }
 
 ul, ol {
-  padding-left: 20px; /* Réduit l’espace entre la puce et le texte */
-  list-style-position: inside; /* Fait entrer la puce dans le flux du texte */
+  padding-left: 20px;
+  list-style-position: inside;
 }
 
 .button {
@@ -215,7 +210,7 @@ ul, ol {
   position: absolute;
   opacity: 0;
   top: 0;
-  left: -20px; /* <- Important pour éviter la fusion */
+  left: -20px;
   transition: 0.5s;
 }
 
@@ -237,11 +232,10 @@ ul, ol {
   position: sticky;
 }
 
-/* --- Responsive mobile --- */
 @media screen and (max-width: 768px) {
   .layout {
     flex-direction: column;
-    margin-left: 0; /* <- réinitialise le décalage */
+    margin-left: 0;
   }
 
   .vertical-menu {

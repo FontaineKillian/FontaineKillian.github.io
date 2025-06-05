@@ -13,9 +13,15 @@
         gtag('config', 'G-MXQXB94P72');
     </script>
 </head>
+
 <header>
 </header>
+
 <body>
+    <img id="custom-cursor" src="Img/Channel/nintendo-wii-hand-animated-custom-cursor.png" alt="curseur"/>
+    <audio hidden controls autoplay>
+        <source src="Audio/BGM/tempWiiMusic.mp3" type="audio/mp3">
+    </audio>
     <main class="layout">
         <!--<aside class="vertical-menu">
             <img class="photo" src="Img/PhotoMoi.png" />
@@ -213,6 +219,17 @@
         </a>
     </section>
     </main>
+    <script>
+        const customCursor = document.getElementById("custom-cursor");
+
+        const offsetX = -8; // vers la gauche
+        const offsetY = -20;  // vers le haut
+
+        document.addEventListener("mousemove", (e) => {
+        customCursor.style.left = (e.clientX - offsetX) + "px";
+        customCursor.style.top = (e.clientY - offsetY) + "px";
+        });
+    </script>
 </body>
 <footer>
     <img id="Info" loading="eager" src="Img/Channel/tempInfo.png">

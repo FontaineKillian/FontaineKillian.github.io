@@ -1,33 +1,84 @@
+/*================
+ ==== General ====
+ =================*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: url('../Img/Channel/cursor.cur'), auto;
+  cursor: none;
+}
+.audio{
+  display: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+#custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 2.5%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+ul, ol {
+  padding-left: 20px;
+  list-style-position: inside;
+}
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #141414;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  margin: 5px;
+}
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:before {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-left: 25px;
+}
+.button:hover {
+  border-color: yellow;
+  background-color: #313131;
+}
+.button:hover span:before {
+  opacity: 1;
+  left: 0;
 }
 
+/*================
+ ===== Head  =====
+ =================*/
 header{
   height: 10px;
 }
 
+/*================
+ ===== Body  =====
+ =================*/
 body {
-  font-family: Arial, sans-serif;
   background-color: #dadada;
-  color: #c096d9;
 }
-
-h1 {
-  font-size: 35px;
-}
-h2 {
-  font-size: 24px;
-  margin-top: 5px;
-}
-
-h1, h2, h4, h5 {
-  color: #313131;
-  text-align: center;
-}
-
 .layout {
   display: flex;
   flex-direction: row;
@@ -35,34 +86,6 @@ h1, h2, h4, h5 {
   gap: 20px;
   padding: 20px;
 }
-
-.vertical-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  background-color: #1f1f1f;
-  padding: 50px 10px 10px 10px;
-  border-radius: 0 10px 10px 0;
-  overflow-y: auto;
-  text-align: center;
-}
-
-.vertical-menu .photo {
-  width: 60%;
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-.réseaux {
-  width: 50px;
-  border-radius: 10px;
-}
-.réseaux:hover {
-  border: solid yellow;
-  background-color: yellow;
-}
-
 .projects {
   flex: 1;
   display: grid;
@@ -71,43 +94,36 @@ h1, h2, h4, h5 {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 #slot {
   background-color: #8f8f8f;
   padding: 5px;
   border-radius: 28px;
   position: relative;
 }
-
 #project {
   width: 100%;
   height: auto;
   border-radius: 25px;
 }
-
 .image-container {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-
 .image-container img {
   width: 100%;
   display: block;
 }
-
 .project-container {
   position: relative;
   display: inline-block;
 }
-
 .project-image {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .banner {
   position: absolute;
   padding: 4px 8px;
@@ -125,22 +141,18 @@ h1, h2, h4, h5 {
   width: 100%;
   border-radius: 0 0 25px 25px;
 }
-
 .icon {
   position: relative;
   width: 20px;
   height: 20px;
   object-fit: contain;
 }
-
 .image-container:hover .banner {
   opacity: 0;
 }
-
 .image-container:hover .effect {
   opacity: 0;
 }
-
 .effect {
   position: absolute;
   top: 0;
@@ -153,68 +165,20 @@ h1, h2, h4, h5 {
   border-radius: 25px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: none;
+/*================
+ ==== Footer =====
+ =================*/
+h1 {
+  font-size: 35px;
 }
-
-ul, ol {
-  padding-left: 20px;
-  list-style-position: inside;
+h2 {
+  font-size: 24px;
+  margin-top: 5px;
 }
-
-.button {
-  display: inline-block;
-  border-radius: 10px;
-  border-color: transparent;
-  background-color: #141414;
-  color: #FFFFFF;
+h1, h2{
+  color: #313131;
   text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  width: 120px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
 }
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:before {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-left: 25px;
-}
-
-.button:hover {
-  border-color: yellow;
-  background-color: #313131;
-}
-
-.button:hover span:before {
-  opacity: 1;
-  left: 0;
-}
-
-#Info{
-  width: 5%;
-}
-
 footer{
   position: fixed;
   padding: 20px 20px;
@@ -230,6 +194,38 @@ footer{
   width: 100%;
   background-color: #707070;
 }
+.vertical-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1f1f1f;
+  padding: 50px 10px 10px 10px;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+  text-align: center;
+}
+.vertical-menu .photo {
+  width: 60%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.réseaux {
+  width: 50px;
+  border-radius: 10px;
+}
+.réseaux:hover {
+  border: solid yellow;
+  background-color: yellow;
+}
+#Info{
+  width: 5%;
+}
+
+/*================
+ = Change Screen =
+ =================*/
 
 @media screen and (max-width: 768px) {
   .layout {

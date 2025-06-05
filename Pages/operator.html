@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Operator</title>
-        <link rel="stylesheet" href="../CSS/moreinfo.css">
+        <link rel="stylesheet" href="../CSS/operactor.css">
     </head>
     <body>
         <div class="button-back">
@@ -12,18 +12,24 @@
                 <button class="button"><span>Back </span></button>
             </a>
         </div>
-        <img class="title-project" loading="eager" src="../Img/TitleOperator.png">
-        <img class="image-project" loading="eager" src="../Img/Operator.gif">
+        <img class="title-project" loading="eager" src="../Img/Operator/TitleOperator.png">
+        <img class="image-project" loading="eager" src="../Img/Operator/Operator.gif">
         <div class="informations-project">
             <section id="about-section" class="about">
-                <h1>À propos</h1>
-                <p>
-                    Operator est mon 2ème projet de seconde année à l'ICAN fait sur Unity.<br><br>
-                    C'est un jeu d'exploration et de gestion en point & click sur PC qui se joue donc uniquement à la souris.
-                </p>
+                <div class="about-section-content">
+                    <p>
+                        Operator est mon 2ème projet de seconde année à l'ICAN fait sur Unity.<br><br>
+                        C'est un jeu d'exploration et de gestion en point & click sur PC qui se joue donc uniquement à la souris.
+                    </p>
+                    <h2>Pitch</h2>
+                    <p>
+                        Incarner un opérateur qui guide trois aventuriers dans un laboratoire en ruine plongé dans les ténebres.<br>
+                        Vous seul pourrez guider et aider les aventuriers a se déplacer dans ce dédale afin de trouver et décrypter 5 symboles antiques pour reconstruire un ancien systeme d’énergie renouvelable.
+                    </p>
+                </div>
             </section>
             <div id="info-section" class="info">
-                <h1>Informations Projet</h1>
+                <h1></h1>
                 <img class="icon" loading="eager" src="../Img/team.png">
                 <h4>Rôle : Game Programmer</h4>
                 <img class="icon" loading="eager" src="../Img/team.png">
@@ -35,34 +41,30 @@
             </div>
         </div>
         <div class="body-section">
-            <h2>Pitch</h2>
-            <p>
-                Incarner un opérateur qui guide trois aventuriers dans un laboratoire en ruine plongé dans les ténebres.<br>
-                Vous seul pourrez guider et aider les aventuriers a se déplacer dans ce dédale afin de trouver et décrypter 5 symboles antiques pour reconstruire un ancien systeme d’énergie renouvelable.
-            </p>
+            
             <h2>L'équipe</h2>
             <p>Milo Bezombes / Chef de Projet, Game Designer, Narrative Designer, Doubleur<br>
                 Killian Fontaine / Game Programmer, Game Design<br>
                 Yann-Ronan Le pennec / Game Artist 3D, Level Designer, Doubleur<br>
                 Jade Shan / Sound Designer, Game Artist 2D
             </p>
-            <h2>Intentions</h2>
+            <h2>Le système de fréquence</h2>
             <p>
-                Nous voulions une utilisation de la fréquence au sein du Gameplay et non pas un Gameplay à fréquence.<br>
-                Pour ce faire nous avons fait des recherches sur les différents types de fréquences électromagnétiques, ou de matériels qui utilisent un système de fréquence, et qui seraient une piste intéressante pour lier une mécanique de Gameplay.
+                Le système de fréquence est assez simple à comprendre.<br>
+                Chaques aventuriers à une fréquence qu'il lui ai assigné au début de la scène.
+                Sur la radio grâce au slide de la souris, on incrémente ou décrémente la valeur pour obtenir la fréquence actuelle du joueur et on vérifie simplement si la fréquence correspond à celle d'un des aventuriers.
+                Si c'est le cas, on met un booléen en "true", et ce booléen est essentiel au fonctionnement du système car sans elle beaucoup de modules qui nécessite d'être sur la fréquence de l'aventurier et tout simplement bloqué.
             </p>
-            <h2>Programmation</h2>
+            <h2>Le système de Module</h2>
             <p>
-                En programmation, ce fut un véritable défi.<br>
-                En effet, le projet à changer beaucoup de fois. On est passé d'un walking simulator à un jeu point & click, ce qui dans un premier temps montre que j'ai parfois revu intégralement l'architecture, le système de jeu.<br>
-                Mais ce n'est pas l'une des seules choses qui vient complexifié du côté de la programmation car il y a aussi le fait que chaque modules à des intéractions, des systèmes très variés des un des autres ce qui augmente les chances de produire des bugs mais aussi de refaire tout un sous sytème uniquement pour le module en question.<br>
-                De plus que le projet ne me plaisait pas et j'ai dû me plier à chaqu'un des "caprices" du projet, je pense avoir jeté 80% du travail que j'ai fourni en programmation ce qui tant à montrer la cadence à laquel j'ai dû produire les scripts et modifications alors que le scop pour chacun des élément étaient serré.<br>
             </p>
+            <img class="schematic" loading="eager" src="../Img/Operator/GateCode.jpg">
+            <img class="schematic" loading="eager" src="../Img/Operator/ModuleCrochetage.jpg">
             <h2>Pour résumer</h2>
             <p>
                 Ce projet bien qu'il ne me satisfait guère dans son game design et dans sa globalité m'a appris beaucoup de choses comme trouver de la complaisance dans le fait de simplement
                 s’améliorer sur des aspects ou encore par l’architecture ou l’énergie déployé dans un projet plutôt que le rendu en tant que tel ce qui permet de générer de la motivation même
-                sur des projet qui ne nous plait pas, ou encore sur ma façon de faire des scripts plus organisés en pensant à ceux qui passeront derrière moi, plus digeste, mieux ranger,
+                sur des projet qui ne me plait pas, ou encore sur ma façon de faire des scripts plus organisés en pensant à ceux qui passeront derrière moi, plus digeste, mieux ranger,
                 communiquer les avancées faites en programmation, etc…
             </p>
             <h2>Pour plus d'informations par rapport au projet :</h2>
